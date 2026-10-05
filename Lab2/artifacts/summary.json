@@ -1,0 +1,150 @@
+{
+  "splits": {
+    "train": {
+      "total": 170884,
+      "fraud": 295,
+      "fraud_fraction": 0.0017263172678542169
+    },
+    "validation": {
+      "total": 56961,
+      "fraud": 98,
+      "fraud_fraction": 0.0017204754130018785
+    },
+    "test": {
+      "total": 56962,
+      "fraud": 99,
+      "fraud_fraction": 0.0017380007724447878
+    }
+  },
+  "roc_auc": 0.9737738790009788,
+  "selected_threshold": 0.037034064531326294,
+  "validation": {
+    "standard_0.5": {
+      "threshold": 0.5,
+      "TP": 72,
+      "FP": 9,
+      "FN": 26,
+      "TN": 56854,
+      "C": 269,
+      "precision": 0.8888888888888888,
+      "recall": 0.7346938775510204
+    },
+    "minimum_cost": {
+      "threshold": 0.037034064531326294,
+      "TP": 82,
+      "FP": 28,
+      "FN": 16,
+      "TN": 56835,
+      "C": 188,
+      "precision": 0.7454545454545455,
+      "recall": 0.8367346938775511
+    },
+    "all_negative": {
+      "threshold": "+inf",
+      "TP": 0,
+      "FP": 0,
+      "FN": 98,
+      "TN": 56863,
+      "C": 980,
+      "precision": null,
+      "recall": 0.0
+    }
+  },
+  "verification": {
+    "A": 0.4,
+    "B": "+inf",
+    "C": 0.8
+  },
+  "test": {
+    "threshold": 0.037034064531326294,
+    "TP": 80,
+    "FP": 35,
+    "FN": 19,
+    "TN": 56828,
+    "C": 225,
+    "precision": 0.6956521739130435,
+    "recall": 0.8080808080808081
+  },
+  "errors": [
+    {
+      "csv_row": 460,
+      "error": "FP",
+      "label": 0,
+      "score": 0.18672600388526917,
+      "Amount": 2.0,
+      "score_minus_threshold": 0.14969193935394287
+    },
+    {
+      "csv_row": 2961,
+      "error": "FP",
+      "label": 0,
+      "score": 0.06913688033819199,
+      "Amount": 2.49,
+      "score_minus_threshold": 0.03210281580686569
+    },
+    {
+      "csv_row": 10783,
+      "error": "FP",
+      "label": 0,
+      "score": 0.9646676182746887,
+      "Amount": 89.99,
+      "score_minus_threshold": 0.92763352394104
+    },
+    {
+      "csv_row": 13405,
+      "error": "FP",
+      "label": 0,
+      "score": 0.9282224178314209,
+      "Amount": 89.99,
+      "score_minus_threshold": 0.891188383102417
+    },
+    {
+      "csv_row": 13617,
+      "error": "FP",
+      "label": 0,
+      "score": 0.9184027314186096,
+      "Amount": 89.99,
+      "score_minus_threshold": 0.8813686370849609
+    },
+    {
+      "csv_row": 10497,
+      "error": "FN",
+      "label": 1,
+      "score": 0.010821633040904999,
+      "Amount": 3.79,
+      "score_minus_threshold": -0.026212431490421295
+    },
+    {
+      "csv_row": 52521,
+      "error": "FN",
+      "label": 1,
+      "score": 0.006812549661844969,
+      "Amount": 105.99,
+      "score_minus_threshold": -0.030221514403820038
+    },
+    {
+      "csv_row": 55401,
+      "error": "FN",
+      "label": 1,
+      "score": 0.005848463624715805,
+      "Amount": 1.0,
+      "score_minus_threshold": -0.03118560090661049
+    },
+    {
+      "csv_row": 91671,
+      "error": "FN",
+      "label": 1,
+      "score": 0.0005256684962660074,
+      "Amount": 290.18,
+      "score_minus_threshold": -0.03650839626789093
+    },
+    {
+      "csv_row": 93486,
+      "error": "FN",
+      "label": 1,
+      "score": 0.018775304779410362,
+      "Amount": 0.0,
+      "score_minus_threshold": -0.01825875975191593
+    }
+  ]
+}

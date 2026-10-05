@@ -1,0 +1,16 @@
+creditcard.csv
+*.zip
+
+# Virtual environments
+.venv/
+Lab1/.venv/
+env/
+venv/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
