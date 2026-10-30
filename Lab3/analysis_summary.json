@@ -1,0 +1,571 @@
+{
+  "split_sha256": "b827abdece5aaebda23cfa5129c99f8aecbdef3ef27dce5c9ae53b88aab45d46",
+  "split_totals": {
+    "train": {
+      "count": 1200,
+      "sum": 11993084,
+      "expected_count": 1200,
+      "expected_sum": 11993084,
+      "matched": true
+    },
+    "validation": {
+      "count": 1498,
+      "sum": 33236385,
+      "expected_count": 1498,
+      "expected_sum": 33236385,
+      "matched": true
+    },
+    "test": {
+      "count": 1502,
+      "sum": 33351444,
+      "expected_count": 1502,
+      "expected_sum": 33351444,
+      "matched": true
+    }
+  },
+  "pretrain_checks": {
+    "split_sha256": "b827abdece5aaebda23cfa5129c99f8aecbdef3ef27dce5c9ae53b88aab45d46",
+    "split_verification": {
+      "no_overlap": true,
+      "total_unique_files": 4200,
+      "all_cells_matched": true,
+      "by_class": {
+        "buildings": {
+          "train": {
+            "count": 200,
+            "sum": 1996761,
+            "expected_count": 200,
+            "expected_sum": 1996761,
+            "matched": true
+          },
+          "validation": {
+            "count": 218,
+            "sum": 4837323,
+            "expected_count": 218,
+            "expected_sum": 4837323,
+            "matched": true
+          },
+          "test": {
+            "count": 219,
+            "sum": 4837559,
+            "expected_count": 219,
+            "expected_sum": 4837559,
+            "matched": true
+          }
+        },
+        "forest": {
+          "train": {
+            "count": 200,
+            "sum": 2032625,
+            "expected_count": 200,
+            "expected_sum": 2032625,
+            "matched": true
+          },
+          "validation": {
+            "count": 237,
+            "sum": 5276962,
+            "expected_count": 237,
+            "expected_sum": 5276962,
+            "matched": true
+          },
+          "test": {
+            "count": 237,
+            "sum": 5291326,
+            "expected_count": 237,
+            "expected_sum": 5291326,
+            "matched": true
+          }
+        },
+        "glacier": {
+          "train": {
+            "count": 200,
+            "sum": 2183923,
+            "expected_count": 200,
+            "expected_sum": 2183923,
+            "matched": true
+          },
+          "validation": {
+            "count": 276,
+            "sum": 6135652,
+            "expected_count": 276,
+            "expected_sum": 6135652,
+            "matched": true
+          },
+          "test": {
+            "count": 277,
+            "sum": 6157250,
+            "expected_count": 277,
+            "expected_sum": 6157250,
+            "matched": true
+          }
+        },
+        "mountain": {
+          "train": {
+            "count": 200,
+            "sum": 1950345,
+            "expected_count": 200,
+            "expected_sum": 1950345,
+            "matched": true
+          },
+          "validation": {
+            "count": 262,
+            "sum": 5789535,
+            "expected_count": 262,
+            "expected_sum": 5789535,
+            "matched": true
+          },
+          "test": {
+            "count": 263,
+            "sum": 5849765,
+            "expected_count": 263,
+            "expected_sum": 5849765,
+            "matched": true
+          }
+        },
+        "sea": {
+          "train": {
+            "count": 200,
+            "sum": 1987613,
+            "expected_count": 200,
+            "expected_sum": 1987613,
+            "matched": true
+          },
+          "validation": {
+            "count": 255,
+            "sum": 5655068,
+            "expected_count": 255,
+            "expected_sum": 5655068,
+            "matched": true
+          },
+          "test": {
+            "count": 255,
+            "sum": 5668011,
+            "expected_count": 255,
+            "expected_sum": 5668011,
+            "matched": true
+          }
+        },
+        "street": {
+          "train": {
+            "count": 200,
+            "sum": 1841817,
+            "expected_count": 200,
+            "expected_sum": 1841817,
+            "matched": true
+          },
+          "validation": {
+            "count": 250,
+            "sum": 5541845,
+            "expected_count": 250,
+            "expected_sum": 5541845,
+            "matched": true
+          },
+          "test": {
+            "count": 251,
+            "sum": 5547533,
+            "expected_count": 251,
+            "expected_sum": 5547533,
+            "matched": true
+          }
+        }
+      },
+      "totals": {
+        "train": {
+          "count": 1200,
+          "sum": 11993084,
+          "expected_count": 1200,
+          "expected_sum": 11993084,
+          "matched": true
+        },
+        "validation": {
+          "count": 1498,
+          "sum": 33236385,
+          "expected_count": 1498,
+          "expected_sum": 33236385,
+          "matched": true
+        },
+        "test": {
+          "count": 1502,
+          "sum": 33351444,
+          "expected_count": 1502,
+          "expected_sum": 33351444,
+          "matched": true
+        }
+      }
+    },
+    "initial_loss_L0": {
+      "ln6": 1.791759469228055,
+      "scratch": 2.047884941101074,
+      "frozen": 1.9243942499160767
+    },
+    "parameter_verification": {
+      "scratch": {
+        "total_params": 11179590,
+        "trainable_params": 11179590,
+        "optimizer_groups": [
+          {
+            "num_params": 11179590,
+            "lr": 0.003,
+            "weight_decay": 0.0001
+          }
+        ],
+        "frozen_in_optimizer": false,
+        "matched": true
+      },
+      "frozen": {
+        "total_params": 11179590,
+        "trainable_params": 3078,
+        "optimizer_groups": [
+          {
+            "num_params": 3078,
+            "lr": 0.003,
+            "weight_decay": 0.0001
+          }
+        ],
+        "frozen_in_optimizer": false,
+        "matched": true
+      },
+      "unfreeze": {
+        "total_params": 11179590,
+        "trainable_params": 8396806,
+        "optimizer_groups": [
+          {
+            "num_params": 3078,
+            "lr": 0.003,
+            "weight_decay": 0.0001
+          },
+          {
+            "num_params": 8393728,
+            "lr": 0.0003,
+            "weight_decay": 0.0001
+          }
+        ],
+        "frozen_in_optimizer": false,
+        "matched": true
+      }
+    },
+    "five_step_verification": {
+      "frozen": [
+        {
+          "module": "conv1",
+          "params_changed": "ні",
+          "bn_stats_changed": "немає BN",
+          "matched_expected": "так"
+        },
+        {
+          "module": "bn1",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer1",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer2",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer3",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer4",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "fc",
+          "params_changed": "так",
+          "bn_stats_changed": "немає BN",
+          "matched_expected": "так"
+        }
+      ],
+      "unfreeze": [
+        {
+          "module": "conv1",
+          "params_changed": "ні",
+          "bn_stats_changed": "немає BN",
+          "matched_expected": "так"
+        },
+        {
+          "module": "bn1",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer1",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer2",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer3",
+          "params_changed": "ні",
+          "bn_stats_changed": "ні",
+          "matched_expected": "так"
+        },
+        {
+          "module": "layer4",
+          "params_changed": "так",
+          "bn_stats_changed": "так",
+          "matched_expected": "так"
+        },
+        {
+          "module": "fc",
+          "params_changed": "так",
+          "bn_stats_changed": "немає BN",
+          "matched_expected": "так"
+        }
+      ],
+      "frozen_bug_experiment": {
+        "modules": [
+          {
+            "module": "conv1",
+            "params_changed": "ні",
+            "bn_stats_changed": "немає BN",
+            "matched_expected": "так"
+          },
+          {
+            "module": "bn1",
+            "params_changed": "ні",
+            "bn_stats_changed": "так",
+            "matched_expected": "ні"
+          },
+          {
+            "module": "layer1",
+            "params_changed": "ні",
+            "bn_stats_changed": "так",
+            "matched_expected": "ні"
+          },
+          {
+            "module": "layer2",
+            "params_changed": "ні",
+            "bn_stats_changed": "так",
+            "matched_expected": "ні"
+          },
+          {
+            "module": "layer3",
+            "params_changed": "ні",
+            "bn_stats_changed": "так",
+            "matched_expected": "ні"
+          },
+          {
+            "module": "layer4",
+            "params_changed": "ні",
+            "bn_stats_changed": "так",
+            "matched_expected": "ні"
+          },
+          {
+            "module": "fc",
+            "params_changed": "так",
+            "bn_stats_changed": "немає BN",
+            "matched_expected": "так"
+          }
+        ],
+        "layer1_0_bn1_max_abs_running_mean_diff": 0.09283638000488281,
+        "layer1_0_bn1_max_abs_running_var_diff": 0.12031435966491699
+      }
+    }
+  },
+  "runs_table": [
+    {
+      "run_id": 1,
+      "regime": "scratch",
+      "seed": 1,
+      "train_loss_epoch8": 0.9771857436498006,
+      "val_macro_f1_epoch8": 0.3733419403489449,
+      "training_time_sec": 863.3485889000003
+    },
+    {
+      "run_id": 2,
+      "regime": "frozen",
+      "seed": 1,
+      "train_loss_epoch8": 0.16545251041650771,
+      "val_macro_f1_epoch8": 0.8842012435043274,
+      "training_time_sec": 402.8134175000014
+    },
+    {
+      "run_id": 3,
+      "regime": "frozen",
+      "seed": 2,
+      "train_loss_epoch8": 0.1756555186708768,
+      "val_macro_f1_epoch8": 0.8785003294351141,
+      "training_time_sec": 469.37705570005346
+    },
+    {
+      "run_id": 4,
+      "regime": "frozen",
+      "seed": 3,
+      "train_loss_epoch8": 0.1895831924676895,
+      "val_macro_f1_epoch8": 0.8885955696095422,
+      "training_time_sec": 406.73135580000235
+    },
+    {
+      "run_id": 5,
+      "regime": "unfreeze",
+      "seed": 1,
+      "train_loss_epoch8": 0.06344954511150717,
+      "val_macro_f1_epoch8": 0.8876812880399191,
+      "training_time_sec": 615.1333741000271
+    },
+    {
+      "run_id": 6,
+      "regime": "unfreeze",
+      "seed": 2,
+      "train_loss_epoch8": 0.10669231984764338,
+      "val_macro_f1_epoch8": 0.8973361506383157,
+      "training_time_sec": 507.7267578999745
+    },
+    {
+      "run_id": 7,
+      "regime": "unfreeze",
+      "seed": 3,
+      "train_loss_epoch8": 0.0997682554833591,
+      "val_macro_f1_epoch8": 0.9056866653236654,
+      "training_time_sec": 535.3633013999788
+    }
+  ],
+  "effects": {
+    "F_scratch_1": 0.3733419403489449,
+    "F_bar_frozen": 0.8837657141829945,
+    "R_frozen": 0.010095240174428088,
+    "F_bar_unfreeze": 0.8969013680006334,
+    "R_unfreeze": 0.018005377283746293,
+    "R": 0.018005377283746293,
+    "delta_pre": 0.5104237738340496,
+    "verdict_pre": "ефект вартий перевірки, але не доведений",
+    "delta_unf": 0.013135653817638815,
+    "verdict_unf": "не відрізняється від розкиду",
+    "total_transfer_gain": 0.5235594276516884,
+    "selection_determined_by_noise": true
+  },
+  "selection": {
+    "regime_means": {
+      "scratch": 0.3733419403489449,
+      "frozen": 0.8837657141829945,
+      "unfreeze": 0.8969013680006334
+    },
+    "selected_regime": "unfreeze",
+    "selected_seed": 3,
+    "selected_val_macro_f1": 0.9056866653236654
+  },
+  "test": {
+    "n_test": 1502,
+    "macro_f1": 0.8913480577862245,
+    "selected_val_macro_f1": 0.9056866653236654,
+    "test_minus_val_macro_f1": -0.014338607537440873,
+    "accuracy": 0.8894806924101198,
+    "se_accuracy": 0.008090071763894462,
+    "classes": [
+      "buildings",
+      "forest",
+      "glacier",
+      "mountain",
+      "sea",
+      "street"
+    ],
+    "confusion_matrix": [
+      [
+        181,
+        3,
+        1,
+        0,
+        2,
+        32
+      ],
+      [
+        0,
+        233,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        0,
+        204,
+        59,
+        11,
+        1
+      ],
+      [
+        0,
+        1,
+        25,
+        234,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        4,
+        8,
+        241,
+        0
+      ],
+      [
+        5,
+        1,
+        0,
+        2,
+        0,
+        243
+      ]
+    ],
+    "characteristic_errors": [
+      {
+        "file": "20179.jpg",
+        "true_class": "glacier",
+        "pred_class": "mountain",
+        "pred_probability": 0.8813501596450806,
+        "pair_error_count": 59
+      },
+      {
+        "file": "20246.jpg",
+        "true_class": "buildings",
+        "pred_class": "street",
+        "pred_probability": 0.9999997615814209,
+        "pair_error_count": 32
+      },
+      {
+        "file": "20093.jpg",
+        "true_class": "mountain",
+        "pred_class": "glacier",
+        "pred_probability": 0.6194869875907898,
+        "pair_error_count": 25
+      },
+      {
+        "file": "20383.jpg",
+        "true_class": "glacier",
+        "pred_class": "sea",
+        "pred_probability": 0.9764235615730286,
+        "pair_error_count": 11
+      },
+      {
+        "file": "20531.jpg",
+        "true_class": "sea",
+        "pred_class": "mountain",
+        "pred_probability": 0.6144393682479858,
+        "pair_error_count": 8
+      }
+    ]
+  }
+}

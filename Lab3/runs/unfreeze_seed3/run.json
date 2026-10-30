@@ -1,0 +1,130 @@
+{
+  "regime": "unfreeze",
+  "seed": 3,
+  "transforms": {
+    "img_size": 160,
+    "train_random_resized_crop_scale": [
+      0.7,
+      1.0
+    ],
+    "train_random_resized_crop_ratio": [
+      0.75,
+      1.3333333333333333
+    ],
+    "train_random_horizontal_flip_p": 0.5,
+    "eval_resize": [
+      160,
+      160
+    ],
+    "interpolation": "bilinear",
+    "normalize_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalize_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "test_time_augmentation": false
+  },
+  "model": {
+    "architecture": "resnet18",
+    "weights": "ResNet18_Weights.IMAGENET1K_V1",
+    "classes": [
+      "buildings",
+      "forest",
+      "glacier",
+      "mountain",
+      "sea",
+      "street"
+    ],
+    "num_classes": 6,
+    "total_params": 11179590,
+    "trainable_params": 8396806,
+    "eval_modules_during_train": [
+      "conv1",
+      "bn1",
+      "layer1",
+      "layer2",
+      "layer3"
+    ],
+    "bn_momentum": 0.1,
+    "bn_eps": 1e-05,
+    "dtype": "float32"
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "optimizer_groups": [
+      {
+        "num_params": 3078,
+        "lr": 0.003,
+        "weight_decay": 0.0001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "amsgrad": false
+      },
+      {
+        "num_params": 8393728,
+        "lr": 0.0003,
+        "weight_decay": 0.0001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "amsgrad": false
+      }
+    ],
+    "loss_fn": "CrossEntropyLoss(reduction='mean', label_smoothing=0.0, weight=None)",
+    "epochs": 8,
+    "train_batch_size": 32,
+    "eval_batch_size": 64,
+    "steps_per_epoch": 38,
+    "total_optimizer_steps": 304,
+    "shuffle_train": true,
+    "drop_last": false,
+    "num_workers": 0,
+    "lr_scheduler": null,
+    "grad_clip": null,
+    "mixed_precision": false,
+    "early_stopping": false,
+    "checkpoint_selection_by_epoch": false
+  },
+  "git_commit": "f81c35f72bfb880ae1276dd3b3f4ce188382b0a3",
+  "git_uncommitted_changes": true,
+  "split_sha256": "b827abdece5aaebda23cfa5129c99f8aecbdef3ef27dce5c9ae53b88aab45d46",
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0+cpu",
+    "device": "cpu (AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD)"
+  },
+  "train_loss_by_epoch": [
+    0.5305874560276668,
+    0.2059181211392085,
+    0.11666218464573225,
+    0.0975833780815204,
+    0.07864602727815509,
+    0.0630209053059419,
+    0.0784362995903939,
+    0.0997682554833591
+  ],
+  "val_macro_f1_by_epoch": [
+    0.8074497670219684,
+    0.9010559024656873,
+    0.8812941897870621,
+    0.9073140526862934,
+    0.9008829585668557,
+    0.891627320686235,
+    0.8651194694050536,
+    0.9056866653236654
+  ],
+  "final_train_loss": 0.0997682554833591,
+  "final_val_macro_f1": 0.9056866653236654,
+  "training_time_sec": 535.3633013999788
+}

@@ -1,5 +1,10 @@
 creditcard.csv
+intel-image-classification/
+seg_train/
+seg_test/
+seg_pred/
 *.zip
+*.onnx
 
 # Virtual environments
 .venv/

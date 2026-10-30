@@ -1,0 +1,360 @@
+{
+  "split_sha256": "b827abdece5aaebda23cfa5129c99f8aecbdef3ef27dce5c9ae53b88aab45d46",
+  "split_verification": {
+    "no_overlap": true,
+    "total_unique_files": 4200,
+    "all_cells_matched": true,
+    "by_class": {
+      "buildings": {
+        "train": {
+          "count": 200,
+          "sum": 1996761,
+          "expected_count": 200,
+          "expected_sum": 1996761,
+          "matched": true
+        },
+        "validation": {
+          "count": 218,
+          "sum": 4837323,
+          "expected_count": 218,
+          "expected_sum": 4837323,
+          "matched": true
+        },
+        "test": {
+          "count": 219,
+          "sum": 4837559,
+          "expected_count": 219,
+          "expected_sum": 4837559,
+          "matched": true
+        }
+      },
+      "forest": {
+        "train": {
+          "count": 200,
+          "sum": 2032625,
+          "expected_count": 200,
+          "expected_sum": 2032625,
+          "matched": true
+        },
+        "validation": {
+          "count": 237,
+          "sum": 5276962,
+          "expected_count": 237,
+          "expected_sum": 5276962,
+          "matched": true
+        },
+        "test": {
+          "count": 237,
+          "sum": 5291326,
+          "expected_count": 237,
+          "expected_sum": 5291326,
+          "matched": true
+        }
+      },
+      "glacier": {
+        "train": {
+          "count": 200,
+          "sum": 2183923,
+          "expected_count": 200,
+          "expected_sum": 2183923,
+          "matched": true
+        },
+        "validation": {
+          "count": 276,
+          "sum": 6135652,
+          "expected_count": 276,
+          "expected_sum": 6135652,
+          "matched": true
+        },
+        "test": {
+          "count": 277,
+          "sum": 6157250,
+          "expected_count": 277,
+          "expected_sum": 6157250,
+          "matched": true
+        }
+      },
+      "mountain": {
+        "train": {
+          "count": 200,
+          "sum": 1950345,
+          "expected_count": 200,
+          "expected_sum": 1950345,
+          "matched": true
+        },
+        "validation": {
+          "count": 262,
+          "sum": 5789535,
+          "expected_count": 262,
+          "expected_sum": 5789535,
+          "matched": true
+        },
+        "test": {
+          "count": 263,
+          "sum": 5849765,
+          "expected_count": 263,
+          "expected_sum": 5849765,
+          "matched": true
+        }
+      },
+      "sea": {
+        "train": {
+          "count": 200,
+          "sum": 1987613,
+          "expected_count": 200,
+          "expected_sum": 1987613,
+          "matched": true
+        },
+        "validation": {
+          "count": 255,
+          "sum": 5655068,
+          "expected_count": 255,
+          "expected_sum": 5655068,
+          "matched": true
+        },
+        "test": {
+          "count": 255,
+          "sum": 5668011,
+          "expected_count": 255,
+          "expected_sum": 5668011,
+          "matched": true
+        }
+      },
+      "street": {
+        "train": {
+          "count": 200,
+          "sum": 1841817,
+          "expected_count": 200,
+          "expected_sum": 1841817,
+          "matched": true
+        },
+        "validation": {
+          "count": 250,
+          "sum": 5541845,
+          "expected_count": 250,
+          "expected_sum": 5541845,
+          "matched": true
+        },
+        "test": {
+          "count": 251,
+          "sum": 5547533,
+          "expected_count": 251,
+          "expected_sum": 5547533,
+          "matched": true
+        }
+      }
+    },
+    "totals": {
+      "train": {
+        "count": 1200,
+        "sum": 11993084,
+        "expected_count": 1200,
+        "expected_sum": 11993084,
+        "matched": true
+      },
+      "validation": {
+        "count": 1498,
+        "sum": 33236385,
+        "expected_count": 1498,
+        "expected_sum": 33236385,
+        "matched": true
+      },
+      "test": {
+        "count": 1502,
+        "sum": 33351444,
+        "expected_count": 1502,
+        "expected_sum": 33351444,
+        "matched": true
+      }
+    }
+  },
+  "initial_loss_L0": {
+    "ln6": 1.791759469228055,
+    "scratch": 2.047884941101074,
+    "frozen": 1.9243942499160767
+  },
+  "parameter_verification": {
+    "scratch": {
+      "total_params": 11179590,
+      "trainable_params": 11179590,
+      "optimizer_groups": [
+        {
+          "num_params": 11179590,
+          "lr": 0.003,
+          "weight_decay": 0.0001
+        }
+      ],
+      "frozen_in_optimizer": false,
+      "matched": true
+    },
+    "frozen": {
+      "total_params": 11179590,
+      "trainable_params": 3078,
+      "optimizer_groups": [
+        {
+          "num_params": 3078,
+          "lr": 0.003,
+          "weight_decay": 0.0001
+        }
+      ],
+      "frozen_in_optimizer": false,
+      "matched": true
+    },
+    "unfreeze": {
+      "total_params": 11179590,
+      "trainable_params": 8396806,
+      "optimizer_groups": [
+        {
+          "num_params": 3078,
+          "lr": 0.003,
+          "weight_decay": 0.0001
+        },
+        {
+          "num_params": 8393728,
+          "lr": 0.0003,
+          "weight_decay": 0.0001
+        }
+      ],
+      "frozen_in_optimizer": false,
+      "matched": true
+    }
+  },
+  "five_step_verification": {
+    "frozen": [
+      {
+        "module": "conv1",
+        "params_changed": "ні",
+        "bn_stats_changed": "немає BN",
+        "matched_expected": "так"
+      },
+      {
+        "module": "bn1",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer1",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer2",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer3",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer4",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "fc",
+        "params_changed": "так",
+        "bn_stats_changed": "немає BN",
+        "matched_expected": "так"
+      }
+    ],
+    "unfreeze": [
+      {
+        "module": "conv1",
+        "params_changed": "ні",
+        "bn_stats_changed": "немає BN",
+        "matched_expected": "так"
+      },
+      {
+        "module": "bn1",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer1",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer2",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer3",
+        "params_changed": "ні",
+        "bn_stats_changed": "ні",
+        "matched_expected": "так"
+      },
+      {
+        "module": "layer4",
+        "params_changed": "так",
+        "bn_stats_changed": "так",
+        "matched_expected": "так"
+      },
+      {
+        "module": "fc",
+        "params_changed": "так",
+        "bn_stats_changed": "немає BN",
+        "matched_expected": "так"
+      }
+    ],
+    "frozen_bug_experiment": {
+      "modules": [
+        {
+          "module": "conv1",
+          "params_changed": "ні",
+          "bn_stats_changed": "немає BN",
+          "matched_expected": "так"
+        },
+        {
+          "module": "bn1",
+          "params_changed": "ні",
+          "bn_stats_changed": "так",
+          "matched_expected": "ні"
+        },
+        {
+          "module": "layer1",
+          "params_changed": "ні",
+          "bn_stats_changed": "так",
+          "matched_expected": "ні"
+        },
+        {
+          "module": "layer2",
+          "params_changed": "ні",
+          "bn_stats_changed": "так",
+          "matched_expected": "ні"
+        },
+        {
+          "module": "layer3",
+          "params_changed": "ні",
+          "bn_stats_changed": "так",
+          "matched_expected": "ні"
+        },
+        {
+          "module": "layer4",
+          "params_changed": "ні",
+          "bn_stats_changed": "так",
+          "matched_expected": "ні"
+        },
+        {
+          "module": "fc",
+          "params_changed": "так",
+          "bn_stats_changed": "немає BN",
+          "matched_expected": "так"
+        }
+      ],
+      "layer1_0_bn1_max_abs_running_mean_diff": 0.09283638000488281,
+      "layer1_0_bn1_max_abs_running_var_diff": 0.12031435966491699
+    }
+  }
+}
